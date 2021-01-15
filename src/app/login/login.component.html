@@ -1,0 +1,16 @@
+<h2>Formulario Usuario</h2>
+
+<br/><input type=text placeholder="email" nome="email" [(ngModel)]="usuario.email"/>
+<br/><input type=text placeholder="username" nome="username" [(ngModel)]="usuario.username"/>
+<br/><input type=text placeholder="senha" nome="password" [(ngModel)]="usuario.password"/>
+<br/><input type=text placeholder="foto" nome="foto" [(ngModel)]="usuario.foto"/>
+<br/>
+<button (click)="cadastrar();">Gravar Usuario</button>
+
+<br/>
+{{msg | json}}
+<br/>
+
+<li *ngFor="let item of usuarios">
+    {{item | json}}
+</li>

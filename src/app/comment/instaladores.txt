@@ -1,0 +1,6 @@
+eu preciso criar um component
+
+ng g c login
+ng g c logado
+ng g c error
+
